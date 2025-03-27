@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+        <!-- style -->
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+
+
+        <!-- lib -->
+        <script src="assets/js/lib/vue.min.js"></script>
+        <script src="assets/js/lib/three.min.js"></script>
+        <script src="assets/js/lib/Reflector.js"></script>
+        <script src="assets/js/lib/tween.umd.js"></script>
+        <script src="assets/js/lib/simplex-noise.2.3.0.min.js"></script>
+        <script src="assets/js/lib/cubic-spline.js"></script>
+
+
+        <!-- data -->
+        <script src="assets/js/data/us_points.min.js"></script>
+        <script src="assets/js/data/uk_points.min.js"></script>
+        <script src="assets/js/data/ru_points.min.js"></script>
+        <script src="assets/js/data/kr_points.min.js"></script>
+        <script src="assets/js/data/jp_points.min.js"></script>
+        <script src="assets/js/data/cn_points.min.js"></script>
+
+
+        <!-- const -->
+        <script src="assets/js/const/const.js"></script>
+
+
+        <!-- method -->
+        <script src="assets/js/method/method.js"></script>
+
+
+        <!-- object -->
+        <script src="assets/js/object/object.js"></script>
+
+
+        <!-- class -->
+        <!-- app -->
+        <script src="assets/js/class/app/app.js"></script>
+
+        <!-- open build -->
+        <script src="assets/js/class/open/build/open.text.build.js"></script>
+        <!-- open -->
+        <script src="assets/js/class/open/open.js"></script>
+
+
+        <!-- map method -->
+        <script src="assets/js/class/map/method/map.child.method.js"></script>
+        <script src="assets/js/class/map/method/map.connection.method.js"></script>
+        <script src="assets/js/class/map/method/map.target.method.js"></script>
+        <!-- map param -->
+        <script src="assets/js/class/map/param/map.param.js"></script>
+        <script src="assets/js/class/map/param/map.child.param.js"></script>
+        <!-- map shader -->
+        <script src="assets/js/class/map/shader/map.grid.shader.js"></script>
+        <!-- map build -->
+        <script src="assets/js/class/map/build/map.child.build.js"></script>
+        <script src="assets/js/class/map/build/map.connection.build.js"></script>
+        <script src="assets/js/class/map/build/map.epicenter.build.js"></script>
+        <script src="assets/js/class/map/build/map.grid.build.js"></script>
+        <script src="assets/js/class/map/build/map.mirror.build.js"></script>
+        <script src="assets/js/class/map/build/map.radar.build.js"></script>
+        <script src="assets/js/class/map/build/map.target.build.js"></script>
+        <!-- map -->
+        <script src="assets/js/class/map/map.js"></script>
+    </head>
+    <body>
+        <div id="wrap" v-cloak>
+
+            <div id="object">
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <div id="element">
+
+                <div class="ui open">
+                    <div class="open-element-container">
+
+                        <div class="open-element open-text-container">
+                            <ul class="open-text">
+                                <li 
+                                    v-for="i in getElement('open', 'text')"
+                                    :key="i.key"
+                                    :style="i.style"
+                                ><span>{{i.text + ' ' + i.loading}}</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="ui map">
+                    <div class="map-object-container">
+                        <div class="map-object"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

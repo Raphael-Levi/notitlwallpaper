@@ -1,0 +1,26 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "No UI ver.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Cyberpunk" ],
+	"title" : "No Title (No UI)",
+	"type" : "Web",
+	"version" : 1,
+	"visibility" : "public",
+	"workshopid" : "2740003429",
+	"workshopurl" : "steam://url/CommunityFilePage/2740003429"
+}
